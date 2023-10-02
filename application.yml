@@ -1,0 +1,38 @@
+﻿server:
+  port: 8081
+  tomcat:
+    accesslog:
+      enabled: true
+spring:
+  datasource:
+    url: jdbc:mariadb://103.130.213.154:3306/thdb
+    username: datnguyen
+    password: 170397
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mvc:
+    show-request-details: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: nguyentubadat833@gmail.com
+    password: qmsytcgqaidmvfxd
+    properties:
+      mail:
+        smtp:
+          auth: true
+        starttls:
+          enable: true
+logging:
+  level:
+    org:
+      hibernate: ERROR
+    root: DEBUG
+google:
+  drive:
+    receiver:
+      host: localhost
+      port: 8089
+

@@ -1,0 +1,8 @@
+services:
+  thservice:
+    image: test
+    container_name: thservice-container
+    ports: 
+      - "8081:8081"
+    volumes:
+        - /home/datnguyen/docker-compose/thservice/application.yml:/thservice-prod/application.yml
